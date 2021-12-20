@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .name-anim {
+            position: relative;
+            font-size: 40px;
+
+        }
+
+        .name-anim::before {
+            width: 100%;
+
+            content: "Abhishek Jangid";
+            color: #fafcf5f1;
+            position: absolute;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: rgb(75, 31, 53) 5px solid;
+            animation: slide 2s alternate-reverse infinite;
+            -webkit-animation: slide 4s alternate-reverse infinite;
+        }
+
+        @keyframes slide {
+            0% {
+                width: 0%;
+            }
+
+            50% {
+                width: 95%;
+            }
+
+            100% {
+                width: 0%;
+            }
+
+        }
+
+        .header {
+
+            height: 8.5cm;
+            background-color: rgb(146, 223, 236);
+            background-image: linear-gradient(rgb(59, 186, 196), rgb(14, 77, 102));
+
+
+
+        }
+
+        .header-2-2 {
+            text-align: center;
+        }
+
+        .header-2 {
+            border: 2px solid rgb(54, 50, 50);
+            width: 4.5cm;
+            height: 1.3cm;
+            border-radius: 17px;
+            text-align: center;
+            margin: auto;
+            font-size: 30px;
+            margin-top: 0.2cm;
+            background-color: blue;
+            background-image: linear-gradient(to right, rgb(22, 7, 109), rgb(70, 190, 226));
+            box-shadow: 60px 10px 60px rgb(6, 10, 17);
+            color: white;
+        }
+
+        .header-2:hover {
+            cursor: pointer;
+            background-image: linear-gradient(to right, rgb(70, 190, 226), rgb(22, 7, 109));
+        }
+
+        .header-1 {
+            border: 2px solid rgb(49, 14, 14);
+            background-color: rgba(155, 84, 84, 0.952);
+            margin: 30px;
+            border-radius: 20px;
+            text-align: center;
+
+        }
+
+        .footer {
+            border: 0.4px solid black;
+            background-color: rgba(133, 207, 199, 0.856);
+            height: 5cm;
+            margin-top: 1cm;
+            text-align: center;
+            box-shadow: 20px 20px 50px rgb(71, 71, 71);
+        }
+
+        .footer-2 {
+            font-size: 20px;
+        }
+
+        .footer-2-1 {
+            font-size: 29px;
+        }
+
+        .mid {
+
+            margin-top: 10px;
+        }
+
+        .mid-1 {
+            text-align: center;
+            text-decoration: underline;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .mid-2 {
+            border: 2px solid black;
+            border-radius: 20px;
+            display: block;
+            flex-direction: row;
+            width: 70%;
+            margin: auto;
+            text-align: center;
+            background-color: rgba(19, 135, 180, 0.247);
+
+            box-shadow: 20px 20px 50px rgb(135, 167, 226);
+
+        }
+
+        .skill-img-1 {
+            height: 5cm;
+            width: 6cm;
+            border: 1px solid black;
+            margin-top: 10px;
+            border-radius: 20px
+        }
+
+        .mid-2-1 {
+            font-family: monospace;
+            font-size: 35px;
+        }
+
+        .mid-2-2 {
+            font-family: sans-serif;
+            font-size: 15px;
+
+        }
+
+        .img-1 {
+            width: 2cm;
+            height: 1cm;
+
+        }
+
+        .mid-21 {
+            display: inline-block;
+            flex-direction: row;
+            margin: auto;
+            margin: 15px;
+            width: 38%;
+        }
+
+        .skill {
+
+            width: 80%;
+            margin: auto;
+            justify-content: center;
+        }
+
+        .skill-1 {
+            border: 2px solid black;
+            border-radius: 5px;
+            height: 0.6cm;
+            margin: auto;
+            width: 70%;
+            margin-bottom: 30px;
+        }
+
+        .inner-skill {
+            background-color: rgb(79, 221, 221);
+            width: 60%;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            text-align: center;
+            height: 0.6cm;
+            font-weight: bolder;
+            font-size: 20px;
+
+        }
+
+        .skill-inner-part {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration-line: underline;
+            font-size: 50px;
+
+        }
+
+        .skill-1-content {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 25px;
+        }
+
+        @media screen and (max-width:600px) {
+            .header-2 {
+                border: 2px solid rgb(54, 50, 50);
+                width: 4.5cm;
+                height: 1.3cm;
+                border-radius: 17px;
+                text-align: center;
+                margin: auto;
+                font-size: 30px;
+                margin-top: 0.6cm;
+                background-color: rgba(88, 74, 74, 0.822);
+                box-shadow: 60px 10px 60px rgb(6, 10, 17);
+                color: white;
+            }
+
+            .skill {
+                width: 100%;
+                margin-left: 0px;
+                margin: auto;
+            }
+
+            .skill-1-content {
+                font-size: 15px;
+
+
+            }
+
+            .header-1 {
+                font-size: 16px;
+                margin: auto;
+                width: 90%;
+
+
+            }
+
+            .mid-2 {
+                width: 95%;
+            }
+
+            .skill-img-1 {
+                width: 4.5cm;
+                height: 4cm;
+            }
+
+            .skill-1-content {
+                font-size: 16px;
+            }
+
+            .footer-2 {
+                font-size: 17px;
+            }
+
+            .footer-2-1 {
+                font-size: 15px;
+            }
+
+            .footer-1 {
+                font-size: 14px;
+            }
+
+            .footer {
+                height: 4cm;
+                background-color: rgba(135, 235, 225, 0.795);
+            }
+
+            .header-1 {
+                font-size: 18px;
+                color: rgb(41, 26, 26);
+                text-align: center;
+                background-color: rgba(73, 62, 62, 0.253);
+            }
+
+            .name-anim {
+                color: rgb(17, 16, 11);
+                text-align: center;
+            }
+
+            .header {
+                opacity: 0.9;
+                background-size: 100% 9.3cm;
+                height: 8.8cm;
+            }
+        }
+
+        @media screen and (max-width: 1600px) and (min-width:1000px) {
+            .name-anim::before {
+                width: 100%;
+
+                content: "Abhishek Jangid";
+                color: #f7fdfb;
+                position: absolute;
+                white-space: nowrap;
+                overflow: hidden;
+                border-right: rgb(41, 19, 30) 5px solid;
+                animation: slide 2s alternate-reverse infinite;
+                -webkit-animation: slide 4s alternate-reverse infinite;
+            }
+
+            .skill {
+                width: 100%;
+                margin-left: 0px;
+                margin: auto;
+            }
+
+            .skill-1-content {
+                font-size: 15px;
+
+
+            }
+
+            .header-1 {
+                font-size: 16px;
+                margin: auto;
+                width: 90%;
+
+
+            }
+
+            .mid-2 {
+                width: 80%;
+            }
+
+            .skill-img-1 {
+                width: 4.5cm;
+                height: 4cm;
+            }
+
+            .skill-1-content {
+                font-size: 16px;
+            }
+
+            .footer-2 {
+                font-size: 17px;
+            }
+
+            .footer-2-1 {
+                font-size: 15px;
+            }
+
+            .footer-1 {
+                font-size: 14px;
+            }
+
+            .footer {
+                height: 4cm;
+                background-color: rgba(135, 235, 225, 0.795);
+            }
+
+            .header-1 {
+                font-size: 18px;
+                color: rgb(41, 26, 26);
+                text-align: center;
+                background-color: rgba(73, 62, 62, 0.253);
+            }
+
+            .header {
+                background-size: 100% 9.5cm;
+                height: 9.5cm;
+            }
+
+            .header-2-2 {
+                margin-top: 0.7cm;
+            }
+
+            @keyframes slide {
+                0% {
+                    width: 0%;
+                }
+
+                50% {
+                    width: 22%;
+                }
+
+                100% {
+                    width: 0%;
+                }
+
+            }
+
+        }
+
+        @media screen and (max-width: 1000px) and (min-width:600px) {
+            .skill {
+                width: 100%;
+                margin-left: 0px;
+                margin: auto;
+            }
+
+            .skill-1-content {
+                font-size: 15px;
+
+
+            }
+
+            .header-1 {
+                font-size: 16px;
+                margin: auto;
+                width: 90%;
+
+
+            }
+
+            .mid-2 {
+                width: 95%;
+            }
+
+            .skill-img-1 {
+                width: 4.5cm;
+                height: 4cm;
+            }
+
+            .skill-1-content {
+                font-size: 16px;
+            }
+
+            .footer-2 {
+                font-size: 17px;
+            }
+
+            .footer-2-1 {
+                font-size: 15px;
+            }
+
+            .footer-1 {
+                font-size: 14px;
+            }
+
+            .footer {
+                height: 4cm;
+                background-color: rgba(135, 235, 225, 0.795);
+            }
+
+            .header-1 {
+                font-size: 18px;
+                color: rgb(41, 26, 26);
+                text-align: center;
+                background-color: rgba(73, 62, 62, 0.253);
+            }
+
+            .header-2-2 {
+                margin-top: 0.3cm;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <h1 class="name-anim">Abhishek Jangid</h1>
+        <div class="header-1">
+            <h4>I am designer</h4>
+            <h4>I am developer</h4>
+            <h4>I am programmer</h4>
+        </div>
+        <div class="header-2-2">
+            <a href="https://drive.google.com/file/d/18aVWv6dr7_ZBbStdDQNa2Osv8_HErPCw/view?usp=sharing"
+                target="blank"><button class="header-2">Resume</button></a>
+        </div>
+    </div>
+    <div class="mid">
+        <h1 class="mid-1">Skills</h1>
+        <div>
+
+            <div class="mid-2" style="margin-bottom: 1cm;">
+                <img src="WD2.jpg" class="skill-img-1">
+                <p class="mid-2-1">Programming</p>
+                <details>
+                    <summary class="mid-2-2">language</summary>
+                    <div>
+                        <div class="mid-21"><img src="abhi_C.jpg" class="img-1"></div>
+                        <div class="mid-21">C programming</div>
+                    </div>
+                    <div>
+                        <div class="mid-21"><img src="abhi_C++.png" class="img-1"></div>
+                        <div class="mid-21">C++ programming</div>
+                    </div>
+                    <div>
+                        <div class="mid-21"><img src="abhi_dsa.png" class="img-1"></div>
+                        <div class="mid-21">Data structure</div>
+                    </div>
+                </details>
+            </div>
+            <div class="mid-2" style="margin-bottom: 0.5cm;">
+                <img src="WD1.png" class="skill-img-1">
+                <p class="mid-2-1">Web development</p>
+                <details>
+                    <summary class="mid-2-2">language</summary>
+                    <div>
+                        <div class="mid-21"><img src="abhi_html.png" class="img-1"></div>
+                        <div class="mid-21">HTML</div>
+                    </div>
+                    <div>
+                        <div class="mid-21"><img src="abhi_css.png" class="img-1"></div>
+                        <div class="mid-21">CSS</div>
+                    </div>
+                    <div>
+                        <div class="mid-21"><img src="abhi_js.png" class="img-1"></div>
+                        <div class="mid-21">Javascript</div>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="skill">
+        <h2 class="skill-inner-part">languages</h2>
+        <div class="skill-1-content">C</div>
+        <div class="skill-1">
+            <div class="inner-skill" style="width: 80%;">80%</div>
+        </div>
+        <div class="skill-1-content">C++</div>
+        <div class="skill-1">
+            <div class="inner-skill" style="width: 30%;">30%</div>
+        </div>
+        <div class="skill-1-content">Javascript</div>
+        <div class="skill-1">
+            <div class="inner-skill" style="width: 50%;">50%</div>
+        </div>
+        <div class="skill-1-content">Data structure and algorithm</div>
+        <div class="skill-1">
+            <div class="inner-skill" style="width: 60%;">60%</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <div class="footer-1">
+                <h2>Designed & created by ABHISHEK JANGID</h2>
+            </div>
+            <div class="footer-2">
+                <div class="footer-2-1">Contact me:<br></div>
+                <email>abhishek.jangid643@gmail.com</email><br>
+                <phone>7976114618</phone>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
